@@ -2,7 +2,7 @@
 
 ## Description
 
-Streple user interacts with the user as well as the services
+Streple user service implements features specific to a user
 
 ## Services
 #### Trading Service
