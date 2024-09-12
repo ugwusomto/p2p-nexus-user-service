@@ -1,0 +1,3 @@
+export const MESSAGE_PATTERN = {
+    REGISTER_USER: "REGISTER_USER"
+}
