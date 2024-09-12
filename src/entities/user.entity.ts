@@ -2,12 +2,11 @@ import { DEFAULT_PROFILE_IMAGE, UserAccountStatus } from "src/constants/index.co
 import { AfterInsert, AfterRemove, AfterUpdate, Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, Unique, UpdateDateColumn } from "typeorm";
 
 @Entity()
-@Unique(["email"])
 class User {
   @PrimaryGeneratedColumn("uuid")
   id: string;
 
-  @Column({ length: 100 })
+  @Column({ length: 100  })
   firstname: string;
 
   @Column({ length: 100 })
@@ -19,25 +18,25 @@ class User {
   @Column({ length: 200 , unique:true })
   email: string;
 
-  @Column({ length: 20 , unique:true })
+  @Column({ length: 20 , unique:true , nullable:true })
   phone: string;
 
   @Column({ length: 200 })
   password: string;
 
-  @Column({ length: 20 })
+  @Column({ length: 20, nullable:true })
   dob: string;
 
-  @Column({ type:'text' })
+  @Column({ type:'text', nullable:true })
   address: string;
 
-  @Column({ default: DEFAULT_PROFILE_IMAGE })
+  @Column({ default: DEFAULT_PROFILE_IMAGE, nullable:true })
   picture: string;
 
   @Column({ default: false })
   emailVerifiedStatus: boolean;
 
-  @Column({ default: UserAccountStatus.UNDER_REVIEW })
+  @Column({ default: UserAccountStatus.UNDER_REVIEW, nullable:true })
   accountStatus: string;
 
   @CreateDateColumn({

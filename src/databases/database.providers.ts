@@ -23,7 +23,6 @@ export const DataBaseProviders = [
             return dataSource.initialize()
         },
         inject:[ConfigService]
-        
     }
 ];
 

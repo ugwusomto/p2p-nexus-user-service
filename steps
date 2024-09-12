@@ -2,4 +2,8 @@
 2. Install redis and ioredis 
 3. Move modules and add constants
 4. add config module and set it up -  npm i --save @nestjs/config
-4. Add typeorm and all the entitites -  npm install --save typeorm mysql2
+5. Add typeorm and all the entitites -  npm install --save typeorm mysql2
+6. Handle record to create user and validate all user record and register
+7. Set dtos for validation
+8. install class-validator and class-transformer
+9. Complete registeration 
