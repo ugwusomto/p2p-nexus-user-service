@@ -1,0 +1,2 @@
+1. Install npm i --save @nestjs/microservices and setup the microservice stuff
+2. Install redis and ioredis 
