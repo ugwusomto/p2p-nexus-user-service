@@ -1,3 +1,5 @@
 1. Install npm i --save @nestjs/microservices and setup the microservice stuff
 2. Install redis and ioredis 
 3. Move modules and add constants
+4. add config module and set it up -  npm i --save @nestjs/config
+4. Add typeorm and all the entitites -  npm install --save typeorm mysql2

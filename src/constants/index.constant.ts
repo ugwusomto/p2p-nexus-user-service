@@ -1,3 +1,18 @@
+export const DEFAULT_PROFILE_IMAGE = "https://t3.ftcdn.net/jpg/06/19/26/46/360_F_619264680_x2PBdGLF54sFe7kTBtAvZnPyXgvaRw0Y.jpg"
+
 export const MESSAGE_PATTERN = {
     REGISTER_USER: "REGISTER_USER"
+}
+
+export const INJECTION_TOKENS = {
+    DATA_SOURCE: "DATA_SOURCE",
+    USER_REPOSITORY: "USER_REPOSITORY",
+}
+
+
+export const UserAccountStatus = {
+    ACTIVE:"ACTIVE",
+    DELETED:"DELETED",
+    SUSPENDED:"SUSPENDED",
+    UNDER_REVIEW:"UNDER_REVIEW",
 }
